@@ -1,0 +1,9 @@
+version: "2"
+services:
+
+    php:
+      build: ./docker
+      volumes:
+        - /htdocker/slim3-starterpack/www/:/var/www/html
+      ports:
+        - 80:80
